@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "fauna-expansion",
+	"version": "${version}",
+	"name": "fauna-expansion",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fauna-expansion/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.faunaexpansion.FaunaExpansion"
+		],
+		"client": [
+			"com.faunaexpansion.client.FaunaExpansionClient"
+		],
+		"fabric-datagen": [
+			"com.faunaexpansion.client.FaunaExpansionDataGenerator"
+		]
+	},
+	"mixins": [
+		"fauna-expansion.mixins.json",
+		{
+			"config": "fauna-expansion.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}

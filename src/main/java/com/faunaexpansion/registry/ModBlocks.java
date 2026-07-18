@@ -2,7 +2,6 @@ package com.faunaexpansion.registry;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.FacingBlock;
 import net.minecraft.block.FallingBlock;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -13,8 +12,8 @@ public class ModBlocks {
 
     public static final Block WET_SAND = new FallingBlock(
             FabricBlockSettings.copyOf(Blocks.SAND)
-    ) {
-    };
+    );
+
 
 
     public static void registerBlocks() {

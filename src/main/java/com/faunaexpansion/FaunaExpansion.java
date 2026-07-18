@@ -1,6 +1,9 @@
 package com.faunaexpansion;
 
 import net.fabricmc.api.ModInitializer;
+import com.faunaexpansion.registry.ModBlocks;
+import com.faunaexpansion.registry.ModItems;
+
 
 public class FaunaExpansion implements ModInitializer {
 
@@ -8,6 +11,8 @@ public class FaunaExpansion implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        System.out.println("Fauna Expansion loaded!");
+
+        ModBlocks.registerBlocks();
+        ModItems.registerItems();
     }
 }

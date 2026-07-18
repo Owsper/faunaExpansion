@@ -12,9 +12,7 @@ public class ModBlocks {
 
     public static final Block WET_SAND = new FallingBlock(
             FabricBlockSettings.copyOf(Blocks.SAND)
-    );
-
-
+    ){};
 
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier("faunaexpansion", "wet_sand"), WET_SAND);
